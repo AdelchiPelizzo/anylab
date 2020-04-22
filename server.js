@@ -1,12 +1,12 @@
 const express = require('express');
 const bodyParser= require('body-parser');
 const app = express();
-const http = require('http');
+const https = require('https');
 
 // Make sure you place body-parser before your CRUD handlers!
 app.use(bodyParser.urlencoded({ extended: true }));
 // app.set('port', process.env.PORT || 3008);
-http.createServer(app).listen(process.env.port || 3008, function() {
+https.createServer(app).listen(process.env.port || 3008, function() {
     console.log('Express app started');
 });
 // app.listen(port, function() {
