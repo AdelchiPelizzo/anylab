@@ -2,8 +2,9 @@
   "name": "anylab",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
+    "start": "node server.js",
     "dev": "nodemon server.js"
   },
   "author": "Adelchi Pelizzo",
@@ -11,5 +12,9 @@
   "dependencies": {
     "body-parser": "1.19.0",
     "express": "4.17.1"
+  },
+  "engines": {
+    "node": "12.x"
   }
 }
+

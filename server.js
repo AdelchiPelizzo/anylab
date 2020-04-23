@@ -1,7 +1,6 @@
 const express = require('express');
 const bodyParser= require('body-parser');
 const app = express();
-
 // Make sure you place body-parser before your CRUD handlers!
 app.use(bodyParser.urlencoded({ extended: true }));
 app.listen(3008, function() {
@@ -21,4 +20,4 @@ app.get('/labels', (req, res) => {
 });
 app.post('/quotes', (req, res) => {
     console.log(req.body)
-}); 
+});
