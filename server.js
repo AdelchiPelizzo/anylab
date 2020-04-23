@@ -1,9 +1,9 @@
 const express = require('express');
 const bodyParser= require('body-parser');
 const app = express();
-// Make sure you place body-parser before your CRUD handlers!
+const port = process.env.PORT || 3008;
 app.use(bodyParser.urlencoded({ extended: true }));
-app.listen(3008, function() {
+app.listen(port, function() {
     console.log('listening on 3008')
 });
 app.get('/:page/:label', (req, res) => {
